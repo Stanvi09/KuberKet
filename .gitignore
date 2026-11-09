@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+gnani_smoke_test.wav
+frontend/node_modules/
+.pytest_cache/
+*.wav
+*.m4a
+KuberKet_share*
+.vscode/

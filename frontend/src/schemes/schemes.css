@@ -1,0 +1,72 @@
+.sc { max-width: 1040px; margin: 0 auto; padding: clamp(1rem, 3vw, 2rem) 16px 7rem; color: var(--ink, #17251f); }
+.sc h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0.2rem 0 0.6rem; color: #0f3d2e; line-height: 1.2; }
+.sc h2 { font-size: 1.35rem; margin: 0 0 0.6rem; color: #0f3d2e; }
+.sc h3 { font-size: 1rem; margin: 1.1rem 0 0.35rem; color: #0f3d2e; text-transform: none; }
+.sc-overline { margin: 0; font-size: 0.82rem; letter-spacing: 0.12em; color: #7a5a00; font-weight: 700; }
+.sc-lead { font-size: 1.1rem; max-width: 62ch; margin: 0 0 0.8rem; }
+.sc-disclaimer { margin: 0; padding: 0.7rem 1rem; border-left: 5px solid #c9a227; background: rgba(201, 162, 39, 0.16); border-radius: 0 10px 10px 0; font-weight: 600; max-width: 70ch; }
+.sc-kn { margin: 0.5rem 0; font-weight: 600; }
+.sc-crop { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin: 1.4rem 0 1rem; }
+.sc-crop > span { font-weight: 700; margin-right: 0.3rem; }
+.sc-crop small { flex-basis: 100%; color: #43564b; }
+.sc-chip { min-height: 44px; padding: 0.4rem 1.2rem; border-radius: 999px; border: 2px solid #0f3d2e; background: #fff; color: #0f3d2e; font-weight: 700; cursor: pointer; }
+.sc-chip.active { background: #0f3d2e; color: #f3c64a; }
+.sc-form { background: #fff; border: 1px solid #ddd3bd; border-radius: 18px; padding: clamp(1rem, 2.5vw, 1.5rem); }
+.sc-form-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.6rem; align-items: center; }
+.sc-form-head h2 { margin: 0; }
+.sc-form-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.sc-btn { min-height: 44px; padding: 0.5rem 1.1rem; border-radius: 999px; border: 2px solid #0f3d2e; background: #0f3d2e; color: #f3c64a; font-weight: 700; cursor: pointer; }
+.sc-btn:hover { background: #1f6b4a; }
+.sc-btn-ghost { background: transparent; color: #0f3d2e; }
+.sc-btn-ghost:hover { background: rgba(15, 61, 46, 0.08); }
+.sc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.9rem 1.2rem; margin-top: 1rem; }
+.sc-field { display: flex; flex-direction: column; gap: 0.3rem; }
+.sc-field label { font-weight: 600; font-size: 0.95rem; }
+.sc-field input, .sc-field select { min-height: 46px; padding: 0.4rem 0.7rem; border-radius: 10px; border: 2px solid #8a9a90; background: #fff; color: #17251f; }
+.sc-field input:focus, .sc-field select:focus { border-color: #0f3d2e; }
+.sc-toggles { border: 0; padding: 0; margin: 1rem 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.4rem 1.2rem; }
+.sc-check { display: flex; align-items: center; gap: 0.6rem; min-height: 44px; cursor: pointer; }
+.sc-check input { width: 22px; height: 22px; accent-color: #1f6b4a; flex: none; }
+.sc-more { margin-top: 1rem; }
+.sc-more summary, .sc-assume summary { cursor: pointer; font-weight: 700; min-height: 36px; }
+.sc-hint { margin: 1.4rem 0; color: #43564b; font-size: 1.05rem; }
+.sc-error { margin: 1rem 0; padding: 0.8rem 1rem; border: 2px solid #b3261e; border-radius: 12px; color: #7d1812; background: #fdeceb; font-weight: 600; }
+.sc-results { display: grid; gap: 1.1rem; margin-top: 1.4rem; }
+.sc-card { background: #fbf6e9; border: 1px solid #ddd3bd; border-radius: 18px; padding: clamp(1rem, 2.5vw, 1.5rem); }
+.sc-card ul, .sc-card ol { margin: 0.3rem 0; padding-left: 1.3rem; }
+.sc-card li { margin: 0.25rem 0; }
+.sc-fine { font-size: 0.9rem; color: #43564b; margin: 0.6rem 0 0; }
+.sc-table-wrap { overflow-x: auto; border-radius: 12px; }
+.sc-table { width: 100%; border-collapse: collapse; min-width: 640px; background: #fff; }
+.sc-table th, .sc-table td { padding: 0.65rem 0.8rem; border-bottom: 1px solid #e4dcc8; text-align: left; vertical-align: top; }
+.sc-table thead th { background: #0f3d2e; color: #fbf6e9; font-size: 0.9rem; }
+.sc-table tbody th small { display: block; font-weight: 500; color: #43564b; }
+.sc-table tr[data-status="not_applicable"], .sc-table tr[data-status="not_needed"], .sc-table tr[data-status="not_eligible"] { color: #43564b; }
+.sc-risk { display: inline-block; padding: 0.15rem 0.7rem; border-radius: 999px; font-weight: 700; font-size: 0.9rem; border: 2px solid currentColor; }
+.sc-risk-lower { color: #14573a; }
+.sc-risk-higher { color: #8c1d16; }
+.sc-risk-same, .sc-risk-na { color: #43564b; }
+.sc-cards { display: grid; gap: 1.1rem; }
+.sc-scheme-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; align-items: flex-start; }
+.sc-badge { padding: 0.2rem 0.8rem; border-radius: 999px; font-weight: 700; font-size: 0.88rem; border: 2px solid currentColor; }
+.sc-badge-may_apply { color: #14573a; }
+.sc-badge-not_applicable, .sc-badge-not_needed { color: #43564b; }
+.sc-badge-not_eligible { color: #8c1d16; }
+.sc-reason { padding: 0.6rem 0.9rem; background: rgba(15, 61, 46, 0.07); border-radius: 10px; font-weight: 600; }
+.sc-lines li { margin: 0.4rem 0; }
+.sc-spark-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-top: 0.4rem; }
+.sc-spark { width: min(260px, 100%); height: auto; background: #fff; border-radius: 10px; border: 1px solid #e4dcc8; }
+.sc-spark-zero { stroke: #8a9a90; stroke-dasharray: 3 3; }
+.sc-spark-base { fill: none; stroke: #8a6a00; stroke-width: 2; stroke-dasharray: 5 3; }
+.sc-spark-after { fill: none; stroke: #0f3d2e; stroke-width: 2.5; }
+.sc-spark-legend { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: #43564b; }
+.sc-sw { display: inline-block; width: 22px; height: 0; border-top: 3px solid; margin-right: 0.4rem; vertical-align: middle; }
+.sc-sw-after { border-color: #0f3d2e; }
+.sc-sw-base { border-color: #8a6a00; border-top-style: dashed; }
+.sc-sources { font-size: 0.9rem; color: #43564b; margin-top: 1rem; }
+.sc-sources a { color: #14573a; font-weight: 600; }
+.sc-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.sc a:focus-visible, .sc summary:focus-visible, .sc-table-wrap:focus-visible { outline: 3px solid #f3c64a; outline-offset: 3px; box-shadow: 0 0 0 5px #0f3d2e; }
+@media (max-width: 600px) { .sc-table { min-width: 560px; } }
+.sc-results > *, .sc-cards > *, .sc-card { min-width: 0; }
+.sc-lead, .sc-disclaimer, .sc p, .sc li { overflow-wrap: anywhere; }
