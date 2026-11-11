@@ -1,51 +1,50 @@
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/header-dark.svg">
+  <img alt="KuberKet: a farm-loan companion you talk to" src=".github/assets/header-light.svg" width="100%">
+</picture>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F3D2E,55:1F6B4A,100:C9A227&height=210&section=header&text=KuberKet&fontSize=66&fontColor=FFF9E9&fontAlignY=36&desc=a%20farm-loan%20helper%20you%20can%20talk%20to&descSize=18&descAlignY=57&descColor=FFF9E9" width="100%" alt="KuberKet banner"/>
+<p align="center">
+  <a href="https://kuberket.onrender.com"><b>Open the live app</b></a>
+  &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/posts/tanvi-sadashiv-3713ba381_gnaniai-greatindianaiinternshipchallenge-activity-7525514175205453824-Cz6j">Watch the demo</a>
+  &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+  <a href="https://x.com/Tanvi_Sadashiv/status/2119753963423858854">Demo on X</a>
+</p>
 
-**Before a farmer signs a loan, KuberKet *tells him out loud* what his monthly kist is and what happens in a bad year.**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/stats-dark.svg">
+  <img alt="321 tests passing. 0 numbers invented by AI. 5 schemes compared. 2 languages, 10 next." src=".github/assets/stats-light.svg" width="100%">
+</picture>
 
-[![Live app](https://img.shields.io/badge/▶%20live%20app-kuberket.onrender.com-C9A227?style=for-the-badge&labelColor=0F3D2E)](https://kuberket.onrender.com)
-[![Demo](https://img.shields.io/badge/demo-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&labelColor=0F3D2E)](https://www.linkedin.com/posts/tanvi-sadashiv-3713ba381_gnaniai-greatindianaiinternshipchallenge-activity-7525514175205453824-Cz6j)
-[![Demo](https://img.shields.io/badge/demo-X-000?style=for-the-badge&logo=x&labelColor=0F3D2E)](https://x.com/Tanvi_Sadashiv/status/2119753963423858854)
+<br>
 
-![Python](https://img.shields.io/badge/Python-3.12-1F6B4A?style=flat-square&logo=python&logoColor=FFF9E9)
-![FastAPI](https://img.shields.io/badge/FastAPI-1F6B4A?style=flat-square&logo=fastapi&logoColor=FFF9E9)
-![React](https://img.shields.io/badge/React%2019%20+%20TypeScript-1F6B4A?style=flat-square&logo=react&logoColor=FFF9E9)
-![Vite](https://img.shields.io/badge/Vite-1F6B4A?style=flat-square&logo=vite&logoColor=FFF9E9)
-![Tests](https://img.shields.io/badge/tests-321%20passing-C9A227?style=flat-square&labelColor=0F3D2E)
+## 01 &nbsp; Why this exists
 
-<sub>Built for the <b>Great Indian AI Internship Challenge</b> on <b>Gnani Prisma</b> (speech-to-text) and <b>Gnani Timbre</b> (text-to-speech).</sub>
+Farm loans are sold in minutes: *instant approval, low interest, sign today.* Almost nobody plans for the bad year, when the crop fails or there's a hospital bill and the instalment is still due.
 
-</div>
+In 2015, the last year NCRB recorded causes, debt was the single biggest reason for farmer suicides: **3,097 farmers, almost 4 in 10** ([source](https://countercurrents.org/2017/01/farmlands-developed-a-bit-more-into-farmer-graveyards-in-2015/)).
 
----
+KuberKet can't fix credit markets. It can make sure the farmer understands the numbers **before** he signs.
 
-## 🪙 Why this exists
+## 02 &nbsp; What it does
 
-Farm loans are sold in minutes: *"instant approval, low interest, sign today."* Almost nobody plans for the bad year, when the crop fails or there's a hospital bill and the instalment is still due.
+A farmer talks to KuberKet in Hindi, Hinglish or English. It asks for his numbers one at a time, reads each one back to confirm it, and then explains:
 
-In 2015, the last year NCRB recorded causes, **debt was the single biggest reason for farmer suicides: 3,097 farmers, almost 4 in 10** ([source](https://countercurrents.org/2017/01/farmlands-developed-a-bit-more-into-farmer-graveyards-in-2015/)).
+| Topic | What he hears |
+|---|---|
+| **His kist** | the monthly instalment, and what's left of his income after it |
+| **The bad year** | what happens if income falls 25% or 40% |
+| **His year, month by month** | a cash-flow chart that follows his crop calendar, with the lean months marked |
+| **Government schemes** | KCC, PMFBY, PM-KISAN, AIF and SMAM compared on *his* numbers |
+| **His documents** | upload the loan PDF and ask what it actually says |
+| **"What does this mean?"** | ask about any chart or number and get a spoken answer |
 
-KuberKet can't fix credit markets. It *can* make sure the farmer understands the numbers before he signs.
-
-## 🗣️ What it does
-
-A farmer **talks** to KuberKet in **Hindi, Hinglish or English**. It asks for his numbers one at a time, reads every number back to confirm it, then explains:
-
-- 💸 **His monthly kist** and how much money he has left each month
-- 🌧️ **A bad-year stress test**: what happens if income falls **25 %** or **40 %**
-- 📅 **A month-by-month cash chart** that follows his crop calendar
-- 🏛️ **Government schemes compared on his own numbers**: KCC, PMFBY, PM-KISAN, AIF and SMAM
-- 📄 **His loan documents**: upload a PDF and ask what it says
-- ❓ **"What does this chart mean?"** He can ask about any chart or number and get a spoken answer
-
-## 🔒 The rule I built around
+## 03 &nbsp; The one rule
 
 > **No AI ever invents a number.**
+> Every rupee KuberKet says comes from a unit-tested Python finance engine. The voice layer only turns speech into slots and results back into speech. The maths never goes through a language model.
 
-Every rupee KuberKet says comes from a **unit-tested Python finance engine**. The voice layer only turns speech into slots and slots back into speech. The maths never goes through a language model.
-
-## 🏗️ Architecture
+## 04 &nbsp; How it's built
 
 ```mermaid
 flowchart LR
@@ -63,87 +62,83 @@ flowchart LR
 | Module | Responsibility |
 |---|---|
 | `finance_engine.py` | EMI (kist) maths, affordability status, income-shock scenarios, monthly cash flow by crop calendar |
-| `schemes_engine.py` · `schemes_data.py` | Evaluates each scheme against the farmer's own cash flow and shows the change in risk |
-| `conversation_agent.py` | Rule-based slot filling in a fixed order, number confirmation (teach-back) |
-| `explanation_engine.py` · `narration.py` | Every user-facing sentence in Hindi and English |
-| `documents_service.py` | Session-only PDF text extraction with hard limits (10 MB, 100 pages) |
-| `gnani_client.py` | Prisma STT and Timbre TTS client |
-| `api.py` | FastAPI app: sessions, conversation, numbers, charts, documents, voice |
-| `frontend/` | React 19 + TypeScript + Vite: voice orb, results, year story, charts, documents |
+| `schemes_engine.py` | Scores each scheme against the farmer's own cash flow and shows the change in risk |
+| `conversation_agent.py` | Rule-based slot filling in a fixed order, with every number read back |
+| `explanation_engine.py`, `narration.py` | Every sentence the user sees or hears, in Hindi and English |
+| `documents_service.py` | Session-only PDF extraction with hard limits (10 MB, 100 pages) |
+| `gnani_client.py` | Prisma speech-to-text and Timbre text-to-speech |
+| `api.py` | FastAPI: sessions, conversation, numbers, charts, documents, voice |
+| `frontend/` | React 19 + TypeScript + Vite: the voice orb, results, year story and charts |
 
-## 🧪 Quality
+## 05 &nbsp; Details I obsessed over
 
-| Suite | Count | Status |
-|---|---|---|
-| Backend (`pytest`) | **228** tests | ✅ all passing |
-| Frontend (`vitest` + Testing Library) | **93** tests | ✅ all passing |
+- **Language purity is tested.** The backend and the frontend each have tests that fail if a Hindi screen leaks a single English word, or the other way round.
+- **Real Devanagari type.** The UI uses Noto Sans Devanagari and Baloo 2, so Hindi looks designed, not like a fallback font.
+- **Teach-back.** The farmer hears each number repeated before anything is calculated. A misheard "twelve thousand" never turns into a wrong chart.
+- **The lean months are named.** Charts don't just dip. The narration says *which* months will be tight.
+- **Built for the night before an interview.** `run.bat` builds the frontend on first run and opens the browser. One double-click from a fresh clone.
 
-There are also dedicated **language-purity tests** (backend *and* frontend) that fail if a Hindi screen leaks English text, or the other way round.
+## 06 &nbsp; Quality
 
-## 🚀 Run it locally
+| Suite | Tests | Status |
+|---|---:|---|
+| Backend, `pytest` | 228 | all passing |
+| Frontend, `vitest` + Testing Library | 93 | all passing |
 
-Requirements: **Python 3.12+**, **Node.js 20+** and a Gnani API key.
+## 07 &nbsp; Run it
+
+Python 3.12+, Node.js 20+ and a Gnani API key.
 
 ```bash
-git clone https://github.com/Stanvi09/KuberKet.git
-cd KuberKet
+git clone https://github.com/Stanvi09/KuberKet.git && cd KuberKet
 echo GNANI_API_KEY=your_key > .env
 python -m pip install -r requirements.txt
 ```
 
-**Windows:** run `run.bat`. It builds the frontend on first run and opens http://127.0.0.1:8000
+| Platform | Command |
+|---|---|
+| **Windows** | `run.bat` builds the UI on first run and opens http://127.0.0.1:8000 |
+| **macOS / Linux** | `(cd frontend && npm install && npm run build)` then `python -m uvicorn api:app --port 8000` |
+| **Tests** | `python -m pytest tests -q` and `(cd frontend && npm test)` |
 
-**macOS / Linux:**
-
-```bash
-(cd frontend && npm install && npm run build)
-python -m uvicorn api:app --host 127.0.0.1 --port 8000
-```
-
-**Tests:**
-
-```bash
-python -m pytest tests -q
-(cd frontend && npm test)
-```
-
-## 📁 Project structure
+## 08 &nbsp; Repository map
 
 ```
 KuberKet/
-├── api.py                    # FastAPI app & routes
-├── finance_engine.py         # the maths (tested)
-├── schemes_engine.py         # scheme comparison
-├── schemes_data.py           # scheme rules & parameters
-├── conversation_agent.py     # slot filling + teach-back
-├── explanation_engine.py     # Hindi / English copy
-├── narration.py              # chart & year narration
-├── documents_service.py      # PDF extraction
-├── gnani_client.py           # Prisma + Timbre client
-├── config.py
-├── tests/                    # 228 backend tests
-├── frontend/                 # React + TS + Vite (93 tests)
-│   └── src/{home,story,year}/
-├── docs/                     # Gnani STT / TTS API notes
-└── run.bat                   # one-click start on Windows
+├── api.py                  FastAPI app and routes
+├── finance_engine.py       the maths, tested
+├── schemes_engine.py       scheme comparison
+├── schemes_data.py         scheme rules and parameters
+├── conversation_agent.py   slot filling and teach-back
+├── explanation_engine.py   Hindi and English copy
+├── narration.py            chart and year narration
+├── documents_service.py    PDF extraction
+├── gnani_client.py         Prisma and Timbre client
+├── tests/                  228 backend tests
+├── frontend/               React + TypeScript + Vite, 93 tests
+├── scripts/                manual API smoke checks
+└── docs/                   Gnani speech API notes
 ```
 
-## 🔭 What's next
+## 09 &nbsp; Next
 
-Hindi and English today. Gnani Timbre already speaks **10 Indian languages**, so **Marathi, Tamil, Telugu and Bengali** are next.
+Hindi and English today. Gnani Timbre already speaks ten Indian languages, so **Marathi, Tamil, Telugu and Bengali** are next.
 
----
+<br>
 
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/footer-dark.svg">
+  <img alt="Designed and built by Tanvi Sadashiv, one detail at a time." src=".github/assets/footer-light.svg" width="100%">
+</picture>
 
-Built by **Tanvi Sadashiv**
-<br/>
-<a href="https://www.linkedin.com/in/tanvi-sadashiv-3713ba381"><img src="https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"/></a>
-<a href="https://x.com/Tanvi_Sadashiv"><img src="https://img.shields.io/badge/X-@Tanvi__Sadashiv-000?style=flat-square&logo=x" alt="X"/></a>
-<a href="https://github.com/Stanvi09"><img src="https://img.shields.io/badge/GitHub-Stanvi09-181717?style=flat-square&logo=github" alt="GitHub"/></a>
-
-<sub><i>KuberKet is education and decision support, not a bank, lawyer or financial adviser.</i></sub>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:C9A227,45:1F6B4A,100:0F3D2E&height=100&section=footer" width="100%"/>
-
-</div>
+<p align="center">
+  <sub>
+    <a href="https://www.linkedin.com/in/tanvi-sadashiv-3713ba381">LinkedIn</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://x.com/Tanvi_Sadashiv">X</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://github.com/Stanvi09">GitHub</a>
+    <br><br>
+    <i>KuberKet is education and decision support, not a bank, lawyer or financial adviser.</i>
+  </sub>
+</p>
