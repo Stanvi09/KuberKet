@@ -49,15 +49,15 @@ Every rupee KuberKet says comes from a **unit-tested Python finance engine**. Th
 
 ```mermaid
 flowchart LR
-    V["🎙️ Farmer's voice"] --> P["Gnani Prisma<br/>speech → text"]
+    V["Farmer voice"] --> P["Gnani Prisma<br/>speech to text"]
     P --> A["Conversation agent<br/>slot filling + teach-back"]
-    A --> F["Finance engine<br/>kist · stress test · cash flow"]
-    A --> S["Schemes engine<br/>KCC · PMFBY · PM-KISAN · AIF · SMAM"]
+    A --> F["Finance engine<br/>kist, stress test, cash flow"]
+    A --> S["Schemes engine<br/>KCC, PMFBY, PM-KISAN, AIF, SMAM"]
     A --> D["Document service<br/>PDF text extraction"]
     F --> E["Explanation engine<br/>Hindi / English sentences"]
     S --> E
-    E --> T["Gnani Timbre<br/>text → speech"]
-    T --> UI["🔊 Voice + 📊 charts<br/>React UI"]
+    E --> T["Gnani Timbre<br/>text to speech"]
+    T --> UI["Voice + charts<br/>React UI"]
 ```
 
 | Module | Responsibility |
